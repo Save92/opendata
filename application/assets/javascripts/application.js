@@ -17,6 +17,7 @@
          */
         $('header.main h1').on('click', function (event) {
             $('body').toggleClass('opened');
+            return false;
         });
         /*
          * Enable slider
