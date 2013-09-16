@@ -30,7 +30,7 @@
     <footer>
         <nav class="internal">
             <a class="previous" href="leffet-pervers-de-lopen-data-payant.php">L'effet pervers de l'OpenData payant</a>
-            <a class="next" href="le-monsieur-data-du-guardian.php">Entretien avec Simon Rogers, le monsieur data du Guardian</a>
+            <a class="next" href="entretien-avec-simon-rogers-le-monsieur-data-du-guardian.php">Entretien avec Simon Rogers, le monsieur data du Guardian</a>
         </nav>
     </footer>
 
