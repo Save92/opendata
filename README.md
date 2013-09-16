@@ -95,4 +95,3 @@ Cette version est la version en cours de développement. Elle doit intégrée de
 - webapplication with jQuery mobile
 - intégration des commentaires avec Disqus
 - storytelling sur Facebook (action comme "cet article change le monde", "cet article est à lire absoluement", ...)
-
