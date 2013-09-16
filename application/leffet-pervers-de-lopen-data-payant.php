@@ -27,8 +27,8 @@
     </div>
     <footer>
         <nav class="internal">
-            <a class="previous" href="liberons-les-donnees-de-quelques-aspects-juridiques.php">Libérons les données de quelques aspects juridiques</a>
-            <a class="next" href="la-datavolution-est-elle-possible.php">La datavolution est-elle possible ?</a>
+            <a class="previous" href="la-datavolution-est-elle-possible.php">La datavolution est-elle possible ?</a>
+            <a class="next" href="lopen-data-une-idee-de-gauche.php">L'open data une idée de gauche ?</a>
         </nav>
     </footer>
 
