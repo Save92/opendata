@@ -109,6 +109,10 @@
             <em>InternetActu.net</em>,
             4 décembre 2008
         </p>
+        <nav class="internal">
+            <a class="previous" href="donnees-publiques-en-france-girondins-vs-montagnards.php">Données publiques en France : Girondins vs Montagnards ?</a>
+            <a class="next" href="la-datavolution-est-elle-possible.php">La datavolution est elle possible ?</a>
+        </nav>
     </footer>
 </article>
 
