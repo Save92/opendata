@@ -1,0 +1,425 @@
+/*
+ * Stylesheets
+ *
+ * Sections:
+ *  -> General
+ *  -> Header
+ *  -> Footer
+ *  -> Home
+ *  -> Article
+ *  -> Slideshow
+ *  -> Contact
+ *
+ */
+/* General */
+html, body {
+    height: 100%;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    overflow-y:             scroll;
+}
+body {
+    font:        13px Cardo, serif;
+    *font-size:  small;
+    *font:       x-small;
+    line-height: 1.22;
+    /* overflow-y:  scroll; */
+    width:       100%;
+}
+table {
+    font:      100%;
+    font-size: inherit;
+}
+select, input, textarea {
+    font: 99% sans-serif;
+}
+a {
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+}
+blockquote {
+    border-left: 3px solid #aaa;
+    margin:      20px 0;
+    padding:     10px 0 10px 17px;
+}
+q {
+    font-style: italic;
+}
+img {
+    height:    auto;
+    max-width: 100%;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+dt {
+    float:       left;
+    font-weight: bold;
+}
+dd {
+    margin-bottom: 10px;
+}
+small, sub, sup {
+    font-size: .83em;
+}
+sub {
+    vertical-align: sub;
+}
+sup {
+    vertical-align: super;
+} 
+sub a, sup a {
+    text-decoration: none;
+}
+/* Header */
+header.main {
+    font-family:    "Open Sans Condensed", sans-serif;
+    height:         0;
+    text-transform: uppercase;
+}
+header.main h1 {
+    background:         #fff;
+    font-size:          1.7em;
+    left:               0;
+    padding:            10px 10px 10px 20px;
+    position:           absolute;
+    top:                30px;
+    -webkit-transform:  translate3d(0, 0px, 0px);
+    -ms-transform:      translate3d(0, 0px, 0px);
+    -o-transform:       translate3d(0, 0px, 0px);
+    -moz-transform:     translate3d(0, 0px, 0px);
+    -webkit-transform:  translate3d(0, 0px, 0px);
+    transform:          translate3d(0, 0px, 0px);
+    -webkit-transition: transform 300ms ease 0s;
+    -o-transition:      transform 300ms ease 0s;
+    -moz-transition:    transform 300ms ease 0s;
+    -ms-transition:     transform 300ms ease 0s;
+    transition:         transform 300ms ease 0s;
+    z-index:            10;
+}
+header.main .inner h1 a {
+    text-decoration: none;
+}
+header.main .left_panel .avatar {
+    height:      50px;
+    line-height: 50px;
+    padding:     30px 10px;
+}
+header.main .left_panel .avatar img {
+    border-radius: 50%;
+}
+header.main .left_panel .avatar div {
+    margin-left: 15px;
+}
+header.main .left_panel .avatar img, header.main .left_panel .avatar div {
+    color: #fff;
+}
+header.main .left_panel .bottom {
+    display:    table;
+    padding:    10px 0;
+    text-align: center;
+    width:      100%;
+}
+header.main .left_panel .bottom a {
+    color:           #fff;
+    display:         table-cell;
+    text-decoration: none;
+}
+.opened header.main .left_panel .avatar img, .opened header.main .left_panel .avatar div {
+    float: left;
+}
+@media only screen and (min-width: 1024px), only screen and (min-width: 768px) and (orientation: landscape) {
+    header.main h1 {
+        position: fixed;
+        top:      60px;
+    }
+}
+.left_panel {
+    height:     0;
+    opacity:    0;
+    overflow-y: scroll;
+    width:      0;
+}
+.opened header.main h1, .opened .body.main {
+    backface-visibility: hidden;
+    left:                0;
+    -o-transform:        translate3d(240px, 0px, 0px);
+    -ms-transform:       translate3d(240px, 0px, 0px);
+    -moz-transform:      translate3d(240px, 0px, 0px);
+    -webkit-transform:   translate3d(240px, 0px, 0px);
+    transform:           translate3d(240px, 0px, 0px);
+    -webkit-transition:  transform 300ms ease 0s;
+    -ms-transition:      transform 300ms ease 0s;
+    -o-transition:       transform 300ms ease 0s;
+    -moz-transition:     transform 300ms ease 0s;
+    -webkit-transition:  transform 300ms ease 0s;
+    transition:          transform 300ms ease 0s;
+}
+.opened header.main .left_panel {
+    background: url(../images/navigation/background.jpg);
+    height:     100%;
+    left:       0;
+    opacity:    1;
+    overflow-y: scroll;
+    position:   fixed;
+    top:        0;
+    width:      240px;
+}
+.opened header.main .left_panel nav {
+    margin-top: 20px;
+    padding:    10px;
+}
+.opened header.main .left_panel nav li {
+    margin-bottom: 10px;
+    min-height:    45px;
+}
+.opened header.main .left_panel nav a {
+    color:           #fff;
+    display:         inline-block;
+    height:          100%;
+    text-decoration: none;
+    width:           100%;
+}
+/* Home */
+#map {
+    bottom:     0;
+    min-height: 100%;
+    position:   absolute;
+    top:        0;
+    width:      100%;
+}
+#geolocate {
+    background:  #fff;
+    bottom:      20px;
+    display:     block;
+    position:    absolute;
+    padding:     2px 2px 0;
+    left:        20px;
+    height:      35px;
+    line-height: 35px;
+    text-align:  center;
+    width:       35px;
+    z-index:     1000;
+}
+#geolocate:hover {
+    background: #ECF5FA;
+}
+/* Article */
+.body.main {
+    -moz-box-sizing:    border-box;
+    height:             100%;
+    position:           relative;
+    -o-transform:       translate3d(0,0,0);
+    -ms-transform:      translate3d(0,0,0);
+    -webkit-transform:  translate3d(0,0,0);
+    -moz-transform:     translate3d(0,0,0);
+    transform:          translate3d(0,0,0);
+    -o-transition:      transform 300ms ease 0s;
+    -ms-transition:     transform 300ms ease 0s;
+    -moz-transition:    transform 300ms ease 0s;
+    -webkit-transition: transform 300ms ease 0s;
+    transition:         transform 300ms ease 0s;
+    width:              100%;
+}
+.body.main article {
+    padding: 15px 15px 30px 15px;
+}
+.body.main article.illustrated {
+    padding: 0;
+}
+.body.main article header {
+    font-family:    "Open Sans Condensed", sans-serif;
+    font-size:      3em;
+    margin:         65px auto 30px;
+    text-transform: uppercase;
+    max-width:      640px;
+}
+.body.main article .body {
+    font-size:   1.2em;
+    line-height: 1.5;
+    margin:      30px auto;
+    max-width:   640px;
+}
+.body.main footer {
+    margin:    0 auto;
+    max-width: 640px;
+}
+.body.main nav.internal a {
+    background-repeat: no-repeat;
+    display:           inline-block;
+    line-height:       40px;
+    height:            40px;
+    text-decoration:   none;
+}
+.body.main nav.internal a.previous {
+    background-image:    url(../images/navigation/previous.png);
+    background-position: left center;
+    padding-left:        40px;
+}
+.body.main nav.internal a.next {
+    background-image:    url(../images/navigation/next.png);
+    background-position: right center;
+    float:               right;
+    padding-right:       40px;
+    text-align:          right;
+}
+.body.main article figure {
+    margin:   30px 0;
+    position: relative;
+}
+.body.main article figure figcaption {
+    color:      #aaa;
+    position:   absolute;
+    right:      -170px;
+    max-width:  150px;
+    top:        10px;
+}
+.body.main h2, .body.main h3 {
+    font-family:    "Open Sans Condensed", sans-serif;
+    margin:         15px 0;
+    text-transform: uppercase;
+}
+.body.main article h2 {
+    font-size: 1.5em;
+}
+.body.main article h3 {
+    font-size: 1.2em;
+}
+.body.main article p {
+    margin-bottom: 10px;
+}
+.body.main li {
+    margin-bottom: 10px;
+    padding-left:  15px;
+    position:      relative;
+}
+.body.main li:before {
+    background:            #000;
+    border:                1px solid #000000;
+    border-radius:         100%;
+    -moz-border-radius:    100%;
+    -webkit-border-radius: 100%;
+    content:               "";
+    display:               inline-block;
+    height:                10px;
+    left:                  -20px;
+    line-height:           10px;
+    margin-right:          10px;
+    position:              absolute;
+    text-align:            center;
+    top:                   5px;
+    width:                 10px;
+}
+.body.main ol {
+    counter-reset: list-counter
+}
+.body.main ol li {
+    padding-top: 4px;
+}
+.body.main ol li:before {
+    color:             #fff;
+    content:           counter(list-counter);
+    counter-increment: list-counter;
+    font-size:         12px // recupère pxtoem;
+    height:            30px;
+    left:              -30px;
+    line-height:       30px;
+    text-indent:       10px;
+    top:               0;
+    width:             30px;
+}
+@media only screen and (min-width: 480px) {
+    .body.main li {
+        padding: 0 0 0 35px;
+    }
+    .body.main li:before {
+        left: 10px;
+    }
+    .body.main ol li:before {
+        height:      20px;
+        left:        0;
+        line-height: 20px;
+        text-indent: 0;
+        width:       20px;
+}
+@media only screen and (min-width: 640px) {
+    .body.main {
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 1024px), only screen and (min-width: 768px) and (orientation: landscape) {
+    .body.main header, .body.main .body, .body.main footer {
+        width: 480px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .body.main header, .body.main .body, .body.main footer {
+        width: auto;
+    }
+}
+/* Slideshow */
+.swipe {
+    overflow:   hidden;
+    position:   relative;
+    visibility: hidden;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float:    left;
+    position: relative;
+    width:    100%;
+}
+.body.main article .slideshow .swipe-wrap img {
+    width: 100%;
+}
+@media only screen and (min-width: 640px) {
+    main {
+        padding: 0;
+    }
+}
+/* Contact */
+form {
+    margin: 0 auto;
+    width:  550px;
+}
+label, input, textarea, select {
+    display: inline-block;
+}
+label {
+    padding:    10px 10px 10px 0;
+    text-align: right;
+    width:      200px;
+}
+input, textarea, select {
+    border:  1px solid #ccc;
+    float:   right;
+    padding: 10px;
+    width:   300px;
+}
+textarea {
+    resize: none;
+}
+input[type="submit"] {
+    clear:              both;
+    color:              #aaa;
+    margin-top:         30px;
+    -ms-transition:     color 0.5s ease 0s;
+    -o-transition:      color 0.5s ease 0s;
+    -moz-transition:    color 0.5s ease 0s;
+    -webkit-transition: color 0.5s ease 0s;
+    transition:         color 0.5s ease 0s;
+    width:              auto;
+}
+input[type="submit"]:hover {
+    color:  #666;
+    cursor: pointer;
+}
