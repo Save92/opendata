@@ -17,8 +17,8 @@
          */
         $('header.main h1').on('click', function (event) {
             $('body').toggleClass('opened');
-            event.stopPropagation();
-        });
+        return false;
+	});
         /*
          * Enable slider
          */
