@@ -74,6 +74,7 @@
                       </ul>
                   </nav>
                   <div class="bottom">
+                    <a href="assets/pdf/Owni_OpenData.pdf">Le livre</a>
                     <a href="contact.php">Contact</a>
                     <a href="http://www.owni.fr">OWNI.fr</a>
                   </div>
