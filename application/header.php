@@ -76,6 +76,7 @@
                   <div class="bottom">
                     <a href="contact.php">Contact</a>
                     <a href="http://www.owni.fr">OWNI.fr</a>
+                    <a href="assets/pdf/Owni_OpenData.pdf">Owni OpenData PDF</a>
                   </div>
                 </div>
             </div>
